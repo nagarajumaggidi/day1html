@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>task6</title>
+    </head>
+<body>
+number1:<input type="text" id="number1">   
+    number2:<input type="text"  id="number2">   
+    add:
+    <input type="button" onclick="add()" >
+    sub:
+    <input type="button" onclick="sub()" >
+    div:
+     <input type="button" onclick="div()" >
+    mul:
+     <input type="button" onclick="mul()" >
+<p id="demo"></p>
+    </body>
+    
+    <script>
+        
+        function add() {
+    var a=document.getElementById("number1").value;
+     var b=document.getElementById("number2").value;
+     var c=Number(a)+Number(b);
+            document.getElementById("demo").innerHTML =c;
+    
+     }
+         function sub() {
+    var a=document.getElementById("number1").value;
+     var b=document.getElementById("number2").value;
+     var c=Number(a)-Number(b);
+            document.getElementById("demo").innerHTML =c;
+    
+     }
+         function div() {
+    var a=document.getElementById("number1").value;
+     var b=document.getElementById("number2").value;
+     var c=Number(a)/Number(b);
+            document.getElementById("demo").innerHTML =c;
+    
+     }
+         function mul() {
+    var a=document.getElementById("number1").value;
+     var b=document.getElementById("number2").value;
+     var c=Number(a)*Number(b);
+            document.getElementById("demo").innerHTML =c;
+    
+     }
+    </script>
+    
+    
+</html>
